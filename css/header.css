@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap');
+
+
+body {
+    /* background-image: url('../img/background.jpg') !important;   */
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+.uk-container {
+    max-width: 1800px;
+}
+
+h1{
+    font-size: 55px;
+
+    font-family: "Rubik Wet Paint", system-ui;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0, 0, 0); /* синий-зеленый градиент */
+    background:#000000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#top h2{
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+#servers span {
+    background: #f2f2f2;
+    color: aliceblue;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin: 10px 0 10px 0;  
+}
+
+.uk-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.uk-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.additional-info {
+    margin-top: 30px;
+}
+
+
+#servers {
+    background: #f2f2f2;
+}
+#repair{
+    background-color: white;
+}
+
+.additional-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.service-card:hover .additional-info {
+    opacity: 1;
+}
+
+
+
+.uk-navbar-right ul.uk-navbar-nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 0px;
+}
+
+.addres  {
+    margin-right: 10px;
+    font-family: 'Noto Sans',sans-serif !important;
+    font-size: 15px;
+}
+
+.phone-number { 
+    font-size: 20px; /* Размер шрифта */
+    color: #17548e; 
+    font-family: 'Noto Sans', sans-serif; /* Подключенный шрифт */
+    text-decoration: none; /* Убираем подчеркивание */
+
+}
+
+.phone-number span {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    color: #17548e; /* Цвет иконки */
+}
+
+.phone-number:hover {
+    text-decoration: underline; 
+}
+
+
+.uk-margin-large-top {
+    margin-top: 10px !important;
+}
+
+.uk-accordion-content {
+    margin: 0;
+    padding: 10px;
+}
+
+.uk-accordion li.uk-open {
+    border-color: #ffffff;
+    border: 3px solid rgb(210, 210, 210);
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.uk-accordion li {
+    border-color: #ffffff;
+    border: 0px solid rgb(210, 210, 210);
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.uk-accordion li .company-description-heading-line.uk-accordion-title.uk-text-left {
+    margin: 4px 10px 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width:960px){
+
+    .addres{
+        font-size: 10px;
+        
+    }
+}    */
+
+/* @media (max-width: 700px) {
+
+
+    .addres{
+        font-size: 15px;
+        
+    }
+    
+    img{
+        height: 50px;
+        width: 200px;
+    }
+} */
+
+@media (max-width: 500px) {
+
+    .addres{
+        font-size: 10px;
+
+    }
+    .phone-number{
+        font-size: 15px;
+    }
+}
