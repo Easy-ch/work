@@ -7,10 +7,10 @@
 
 body {
     /* background-image: url('../img/background.jpg') !important;   */
-    background-size: cover;  
-    background-position: center; 
-    background-repeat: no-repeat;  
-    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
@@ -19,19 +19,20 @@ body {
     max-width: 1800px;
 }
 
-h1{
+h1 {
     font-size: 55px;
 
     font-family: "Rubik Wet Paint", system-ui;
     font-style: normal;
     text-align: center;
-    color: rgb(0, 0, 0); /* синий-зеленый градиент */
-    background:#000000;
+    color: rgb(0, 0, 0);
+    /* синий-зеленый градиент */
+    background: #000000;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#top h2{
+#top h2 {
     font-size: 30px;
     margin-top: 20px;
 
@@ -43,7 +44,7 @@ h1{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    margin: 10px 0 10px 0;  
+    margin: 10px 0 10px 0;
 }
 
 .uk-card {
@@ -64,7 +65,8 @@ h1{
 #servers {
     background: #f2f2f2;
 }
-#repair{
+
+#repair {
     background-color: white;
 }
 
@@ -80,42 +82,19 @@ h1{
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+
 .service-card:hover .additional-info {
     opacity: 1;
 }
 
 
-
+/* 
 .uk-navbar-right ul.uk-navbar-nav {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0px;
-}
-
-.addres  {
-    margin-right: 10px;
-    font-family: 'Noto Sans',sans-serif !important;
-    font-size: 15px;
-}
-
-.phone-number { 
-    font-size: 20px; /* Размер шрифта */
-    color: #17548e; 
-    font-family: 'Noto Sans', sans-serif; /* Подключенный шрифт */
-    text-decoration: none; /* Убираем подчеркивание */
-
-}
-
-.phone-number span {
-    margin-right: 10px; /* Отступ между иконкой и текстом */
-    color: #17548e; /* Цвет иконки */
-}
-
-.phone-number:hover {
-    text-decoration: underline; 
-}
-
+} */
 
 .uk-margin-large-top {
     margin-top: 10px !important;
@@ -145,46 +124,100 @@ h1{
     margin: 4px 10px 0px 10px;
 }
 
+.my-margin {
+    margin-left: 4vw;
+
+}
+
+.logo {
+    width: auto;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    min-height: 64.5px;
+}
+
+.uk-button-text::before {
+    color: #000000;
+}
 
 
 
 
+.my-navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+*+address, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
+    margin-top: 0;
+}
+
+.company-addres {
+    margin-bottom: 6px;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 30px   ;
+}
+
+.phone-number {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #17548e;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+    /* float: right; */
+    margin-left: auto;
+}
+
+.phone-number span {
+    margin-right: 10px;
+    /* Отступ между иконкой и текстом */
+    color: #17548e;
+    /* Цвет иконки */
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
 
 
+@media (max-width:960px) {
 
-
-
-
-
-
-
-
-
-
-/* 
-@media (max-width:960px){
-
-    .addres{
-        font-size: 10px;
-        
+    h1 {
+        font-size: 40px;
     }
-}    */
 
-/* @media (max-width: 700px) {
-
-
-    .addres{
-        font-size: 15px;
-        
+    .uk-text-center strong {
+        font-size: 20px;
+        margin-top: 15px;
     }
-    
-    img{
-        height: 50px;
-        width: 200px;
+}
+
+/* @media (max-width: 730px) {
+    .logo {
+        margin-right: 30px ;
     }
 } */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
 
     .addres{
         font-size: 10px;
@@ -193,4 +226,4 @@ h1{
     .phone-number{
         font-size: 15px;
     }
-}
+} */

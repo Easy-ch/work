@@ -8,43 +8,75 @@
     <link rel="stylesheet" href="css/header.css">
 </head>
 
-<body >
+<body>
     <div class="uk-section-default uk-background-muted uk-preserve-color">
-        <div class="uk-position-z-index-high"
-            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-            style="background-color: rgb(247, 247, 247);">
-            <nav class="uk-navbar-container">
-                <div uk-navbar>
-                    <div class="uk-navbar-left">
-                       <a class="smooth-scroll" href="#top"><img src="img/logo.svg" alt="Логотип компании" style="max-width: 90%; width: auto; height: 60px;margin-left: 10px;"></a> 
-                    </div>
-                    <div class="uk-navbar-center">
-                        <ul class="uk-navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link uk-button-text" href="#top" uk-scroll="offset:82">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link uk-button-text" href="#seller"uk-scroll="offset:82">Оргтехника</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link uk-button-text" href="#it"uk-scroll="offset:82">ИТ-Аутсорсинг</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                                <a href="tel:88003029448" class="phone-number" style="padding-top: 10px; margin-bottom: 0;">
-                                    <span uk-icon="receiver"></span> +7 911 589-69-52
-                                </a>
-                            <li>
-                                <p  class="addres" >Архангельск, ул. Вологодская, д. 6</p>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="uk-position-z-index-high" uk-sticky="cls-active: uk-navbar-sticky" style="background-color: rgb(247, 247, 247);">
+
+            <nav class="my-navbar-container">
+                <div class="navbar-left">
+                    <a class="mobile-nav-menu-open uk-navbar-toggle uk-hidden@m" uk-toggle="target: #mobile-menu">
+                        <span class="my-margin" uk-navbar-toggle-icon></span> 
+                    </a>
+
+                    <a class="smooth-scroll uk-visible@m" href="#top"> <img class="logo" src="img/logo.webp" alt="Логотип компании"></a> 
                 </div>
-            </nav> 
+
+                <div class="navbar-center">
+                    <div class="my-navbar-center uk-hidden@m">
+                        <a class="smooth-scroll" href="#top">
+                            <img class="logo" style="justify-self: center;" src="img/logo.webp" alt="Логотип компании">
+                        </a>
+                    </div>
+
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li class="nav-item">
+                            <a class="nav-link uk-button-text" href="#top" uk-scroll="offset:82">Главная</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link uk-button-text" href="#servers" uk-scroll="offset:82">Серверы</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link uk-button-text" href="#seller"uk-scroll="offset:82">Оргтехника</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link uk-button-text" href="#it"uk-scroll="offset:82">ИТ-Аутсорсинг</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-right">
+                    <a href="tel:88003029448" class="phone-number"><span uk-icon="receiver"></span>+7 911 589-69-52</a>
+                    
+                    <p class="company-addres" >Архангельск, ул. Вологодская, д. 6</p>
+                </div>
+            </nav>
         </div>
     </div>
+
+    <!--                                            Mobile nav-menu                                             -->
+    <div id="mobile-menu" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-default">
+                
+                <li class="uk-nav-header">Каталог</li>
+                <li><a href="#PVC_figures" uk-scroll><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Главная</a></li>
+                <li><a href="#Rebounding_walls" uk-scroll><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Серверы</a></li>
+                <li><a href="#Rebound_discs" uk-scroll><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Оргтехника</a></li>
+                <li><a href="#Football_goal" uk-scroll><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>ИТ-Аутсорсинг</a></li>
+
+                <li class="uk-nav-divider"></li>
+                
+                <li class="uk-nav-header">Контакты и соцсети</li>
+                <li><a href="#Contacts" uk-scroll><span class="uk-margin-small-right uk-icon" uk-icon="receiver"></span>Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
 
 
     <div id="top"  class="uk-section" >
