@@ -34,9 +34,15 @@ h1 {
 
 }
 
+#obor span{
+    font-size: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
 #servers span {
-    background: #f2f2f2;
-    color: aliceblue;
+    background: linear-gradient(180deg,rgb(34, 228, 228), rgb(0, 191, 255));
+    color: rgb(255, 240, 240);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
@@ -62,6 +68,8 @@ h1 {
     background: #f2f2f2;
 }
 
+
+
 #repair {
     background-color: white;
 }
@@ -82,6 +90,7 @@ h1 {
 .service-card:hover .additional-info {
     opacity: 1;
 }
+
 
 
 /* 
@@ -114,6 +123,10 @@ h1 {
     border: 0px solid rgb(210, 210, 210);
     border-radius: 2px;
     transition: all 0.2s ease;
+}
+
+.uk-accordion li .delivery-programming-application-line .uk-accordion-title.uk-text-left {
+    margin: 4px 10px 0px 10px;
 }
 
 .uk-accordion li .company-description-heading-line.uk-accordion-title.uk-text-left {
@@ -213,13 +226,16 @@ h1 {
     }
 } */
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
 
-    .addres{
-        font-size: 10px;
+    #servers span{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .company-addres{
+        margin-left: 130px;
+    }
 
-    }
-    .phone-number{
-        font-size: 15px;
-    }
-} */
+} 
+
+
