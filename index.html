@@ -37,15 +37,18 @@
                         <li class="nav-item">
                             <a class="nav-link uk-button-text" href="#servers" uk-scroll="offset:82" style="font-size: 12px;">Сервера </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link uk-button-text" href="#guarantee"uk-scroll="offset:82" style="font-size: 12px;">Гарантия</a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link uk-button-text" href="#obor"uk-scroll="offset:200" style="font-size: 12px;">Серверное оборудование</a>
                         </li>
 
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link uk-button-text" href="#seller"uk-scroll="offset:82" style="font-size: 12px;">Оргтехника</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link uk-button-text" href="#it"uk-scroll="offset:82" style="font-size: 12px;">ИТ-Аутсорсинг</a>
@@ -72,8 +75,9 @@
                 <li class="uk-nav-header">Каталог</li>
                 <li><a href="#top" uk-scroll="offset:82"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Главная</a></li>
                 <li><a href="#servers" uk-scroll="offset:82"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Серверы</a></li>
+                <li><a href="#guarantee" uk-scroll="offset:200"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Гарантия</a></li>
                 <li><a href="#obor" uk-scroll="offset:200"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Серверное оборудование</a></li>
-                <li><a href="#seller" uk-scroll="offset:82"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Оргтехника</a></li>
+                <!-- <li><a href="#seller" uk-scroll="offset:82"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>Оргтехника</a></li> -->
                 <li><a href="#it" uk-scroll="offset:82"><span class="uk-margin-small-right uk-icon" uk-icon="minus"></span>ИТ-Аутсорсинг</a></li>
 
                 <li class="uk-nav-divider"></li>
@@ -95,114 +99,94 @@
     </div>
 
     <!-- Services Section -->
-    <div id="servers" class="uk-section" style="padding-top: 10px;">
-        <div style="background-color: rgb(255, 255, 255); border-radius: 10px; margin-inline: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
-            <h2 class="uk-text-center "><span style="font-family: 'Montserrat', sans-serif;">Сервера в наличии на складе в Архангельске</span></h2>
+    <div id="servers" class="uk-section" >
+        <div style="background-color: rgb(84, 212, 255); border-radius: 10px; margin-inline: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+            <h2 class="uk-text-center "><span style="font-family: 'Montserrat', sans-serif; color: #ffffff; font-weight: 700; ">Сервера в наличии на складе в Архангельске</span></h2>
         </div>
         <div class="uk-container">
             <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid> <!-- uk-child-width-1-4@l uk-child-width-1-5@xl -->
                 <div>
                     <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
                         <div class="uk-card-media-top">
-                            <img src="img/stserver.webp" width="1800" height="1200" alt="">
+                            <img src="img/server.jpg" width="1800" height="1200" alt="">
                         </div>
                         <div class="service-card">
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Стоечный сервер</h3>
-                                <p>Настроим сервер под ваши задачи</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
+                                <h4 class="title">Сервер HPE Proliant DL380 Gen9 8SFF</h4>
+                                <h4 class="tech">Технические характеристики</h4>
+                                <div class="table-description">
+                                    <table>
+                                        <tr>
+                                        <td>Тип платформы:</td>
+                                        <td>Rackmount</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сокет:</td>
+                                            <td>FCLGA2011-3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Количество сокетов:</td>
+                                            <td>2</td>
+                                        </tr>  
+                                        <tr>
+                                            <td>Семейство процессоров:</td>
+                                            <td>Intel Xeon E5-2600v3 / Intel Xeon E5-2600v4</td>
+                                        </tr>  
+                                        <tr>
+                                            <td>Поколение памяти:</td>
+                                            <td>DDR4</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>Количество слотов памяти:</td>
+                                            <td>24</td>
+                                        </tr>                                    
+                                        <tr>
+                                            <td>Макс.объём оперативной памяти:</td>
+                                            <td>1536GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Форм-фактор дисков:</td>
+                                            <td>2.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Количество дисков в корзине</td>
+                                            <td>8</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>Горячая замена дисков:</td>
+                                            <td>Да</td>
+                                        </tr>   
+                                        <tr>
+                                            <td>Количество блоков питания:</td>
+                                            <td>2</td>
+                                        </tr>  
+                                        <tr>
+                                            <td>Вес платформы:</td>
+                                            <td>26.6 кг</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Габариты платформы (Ш х В х Г):</td>
+                                            <td>44.55 x 8.73 x 67.94 см</td>
+                                        </tr>                                                           
+                                    </table>
+                                    <div class="uk-hidden-notouch">
+                                        <p style="text-align: left; font-size: medium; margin-top: 5px;">Стоимость: от 59.000 руб.</p>
+                                    </div>
+                                </div>
+                                <div class="additional-info uk-hidden-touch">
+                                    <p>Стоимость: от 59.000 руб.</p>
+                                </div>  
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
-                        <div class="uk-card-media-bottom">
-                            <img src="img/serv.jpg" width="1800" height="1200" alt="">
-                        </div>    
-                        <div class="service-card">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Bottom</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
-                        <div class="uk-card-media-bottom">
-                            <img src="img/serv.jpg" width="1800" height="1200" alt="">
-                        </div>    
-                        <div class="service-card">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Bottom</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
-                        <div class="uk-card-media-bottom">
-                            <img src="img/serv.jpg" width="1800" height="1200" alt="">
-                        </div>    
-                        <div class="service-card">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Bottom</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
-                        <div class="uk-card-media-bottom">
-                            <img src="img/serv.jpg" width="1800" height="1200" alt="">
-                        </div>    
-                        <div class="service-card">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Bottom</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card" uk-scrollspy="cls:uk-animation-fade">
-                        <div class="uk-card-media-bottom">
-                            <img src="img/serv.jpg" width="1800" height="1200" alt="">
-                        </div>    
-                        <div class="service-card">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Media Bottom</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <!-- <div class="additional-info">
-                                    <p>Стоимость: от 4000 руб.</p>
-                                </div>   -->
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
+                
             </div>              
         </div>
     </div>
 
 
-    <div id="seller">
+    <!-- <div id="seller">
         <div class="uk-container">
             <h2 class="uk-heading-line uk-text-center "><span>Оргтехника</span></h2>
             <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex-center" uk-grid>
@@ -250,9 +234,9 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>   -->
 
-    <div id="obor">
+    <!-- <div id="obor">
         <div class="uk-container">
             <h2 class="uk-heading-line uk-text-center"><span style="margin-top: 20px;" >ПОСТАВКА СЕРВЕРНОГО ОБОРУДОВАНИЯ ИЗ КИТАЯ И ОАЭ.</span></h2>
             <ul uk-accordion="multiple: true" style="margin-bottom: 10px;">
@@ -263,14 +247,56 @@
                        - Поставка санкционного программного обеспечения
                     </div>
                 </li>
+        </div>
+    </div> -->
 
+    <div id="guarantee" class="uk-section">
+        <div class="uk-section-default uk-preserve-color">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>Гарантия</span></h2>
+                <div class="uk-child-width-1-1@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-small uk-card-body" style="border-radius:10px;">
+                            <ul>
+                                <li>Подберем сервер под ваши задачи</li>
+                                <li>Установим и настроим серверную операционную систему Windows Server или Linux </li>
+                                <li>Проведем IT-аудит вашей организации </li> 
+                                <li>Доставим и установим сервер к Вам в офис</li>
+                                <li>При необходимости поможем с приобретением сервера в лизинг</li>
+                            </ul>
+                            <hr>
+                            <p>Все оборудование перед отгрузкой проходит тщательную проверку и стресс-тестирование <br>
+                                <strong>3 года </strong>гарантии на все серверы, включая диски и накопители <br>
+                                Расширенная гарантия <strong>5 лет</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div id="obor" class="uk-section" >
+        <div class="uk-section-default uk-preserve-color">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>Поставка серверного оборудования из Китая и ОАЭ</span></h2>
+                <div class="uk-child-width-1-1@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-small uk-card-body" style="border-radius:10px;">
+                            <h3 class="uk-card-title" style="text-align: center;">Мы предлагаем</h3>
+                            <hr>
+                            <p>Поставка серверов из реестра Минпромторга.</p>
+                            <hr>
+                            <p>Поставка санкционного программного обеспечения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 
 
 
-    <div id="it" style="margin-top: 20px;">
+    <!-- <div id="it" style="margin-top: 20px;">
         <div class="uk-container">
             <h2 class="uk-heading-line uk-text-center"><span>ИТ-Аутсорсинг</span></h2>
             <ul id="Company_description" uk-accordion="multiple: true" style="margin-bottom: 10px;">
@@ -302,8 +328,38 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
+
+        <div id="it" style="margin-top: 20px;">
+            <div class="uk-container">
+                <h2 class="uk-heading-line uk-text-center"><span>ИТ-Аутсорсинг</span></h2>
+                <div class=" uk-card-default uk-card-body uk-width-1-1@m" style="box-shadow: 17px 16px 3px 3px rgba(0, 0, 0, .10); border: 2px solid black;">
+                    <h3 class="uk-card-title" style="font-weight:700;">Что это?</h3>
+                    <p>Сегодня компьютерные технологии ушли далеко от "просто компьютера" на рабочем месте, и разумный выход большинства компаний - отдать такое сложное и непрофильное направление на Аутсорс.
+                        Использование схемы аутсорсинга для Вашей организации имеет значительный ряд преимуществ:
+                        Вы получаете качественное обслуживание специализированной компанией в рамках договорных отношений;
+                        Вы снижаете свои затраты на содержание собственного специализированного подразделения, а именно;
+                        Затраты на заработную плату сотрудников;
+                        Затраты на уплату обязательных налогов 
+                        Затраты по оплаты пособий, отпускных и больничных;
+                        Затраты на повышение квалификации сотрудников;
+                        Затраты на оснащение рабочего места сотрудников;
+                        и ряд иных расходов
+                        Вы получаете в общем комплексе сотрудника с наличием опыта;
+                        Вы избавляетесь от возможного поиска нового сотрудника, в связи с его уходом (декрет, увольнение и т.д.)</p>
+                    <hr>
+                    <h3 class="uk-card-title" style="font-weight:700; margin-top: 5px;">Мы предлагаем</h3>
+                    <p>
+                        -Вы получаете индивидуальный подход <br>
+                        -Администрирование серверов <br>
+                        -Обслуживание АРМ <br>
+                        -Обслуживание оргтехники <br>
+                        -Проектирование и монтаж СКС и Видеонаблюдения <br>
+                    </p>
+                </div>
+            </div>
+        </div>
 
     <div class="uk-section uk-section-secondary uk-padding-remove-vertical uk-padding-remove-horizontal" style="background-color: rgb(79, 79, 79); margin-top: 30px;">
         <div class="uk-container" style="margin-top: 10px;">
