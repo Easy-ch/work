@@ -34,12 +34,6 @@ h1 {
 
 }
 
-#obor span{
-    font-size: 20px; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
 
 .uk-card {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -84,8 +78,6 @@ h1 {
 }
 
 
-
-
 #repair {
     background-color: white;
 }
@@ -107,15 +99,7 @@ h1 {
     opacity: 1;
 }
 
-.table-description table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    font-size: small;
-}
-td{
-    padding: 3px;
-}
+
 
 /* 
 .uk-navbar-right ul.uk-navbar-nav {
@@ -175,8 +159,6 @@ td{
 .uk-button-text::before {
     color: #000000;
 }
-
-
 
 
 .my-navbar-container {
