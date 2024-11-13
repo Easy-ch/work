@@ -232,4 +232,13 @@ h1 {
 
 } 
 
+@media (min-width: 1200px) {
+    *+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {
+        margin-top: 15px;
+    }
+    .description-card{
+        font-size: medium;
+    }
+}
+
 
