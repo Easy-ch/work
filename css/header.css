@@ -36,7 +36,7 @@ h1 {
 
 .circle-img{
     display: grid;
-    border: 10px solid white;
+    border: 10px solid rgb(105, 102, 102);
     align-self: center;
     width: 140px;
     height: 140px;
@@ -56,8 +56,8 @@ h1 {
 }
 
 .circle-img:hover{
-    border: 10px solid rgb(13, 119, 233);
-    background-color: #02dafb;
+    border: 10px solid rgb(1, 98, 201);
+    background-color: #09adc7;
 
     img{
         border-radius: 10px;
