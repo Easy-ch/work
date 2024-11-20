@@ -13,7 +13,7 @@ body {
     background-image: url("../img/background.jpg");
 }
 
-.uk-container {
+#cond .uk-container {
     max-width: 1800px;
 }
 
@@ -190,6 +190,7 @@ h1 {
     font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     /* float: right; */
+    position: absolut;
     margin-left: auto;
 }
 
@@ -224,11 +225,6 @@ h1 {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
 }
 
-.additional-info {
-    margin-top: 30px;
-}
-
-
 
 .additional-info {
     position: absolute;
@@ -245,6 +241,76 @@ h1 {
 .service-card:hover .additional-info {
     opacity: 1;
 }
+
+
+/* .uk-card-body{
+    padding: 10px;
+    text-align: center;
+} */
+
+.animation{
+    display: block;
+
+    .uk-card-custom{
+        background-color: rgb(238, 238, 238);
+        height: 100%;
+        transition:  height 0.4s ease;
+
+        img{
+            margin-top: 50px;
+            transition: margin-top 0.4s ease;
+        }
+        .shadow{
+            background-color: #fff;
+            width: 0;
+            height: 0;
+            bottom: 0;
+            -webkit-filter: blur(50px);
+            filter: blur(50px);
+            transition:-webkit-filter 0.4s ease, filter 0.4s ease,background-color 0.4s ease;
+
+        }
+    }
+
+}
+
+
+.animation:hover{
+    .uk-card-custom {
+        height:50%;
+    
+        img {
+            margin-top: 10px;
+        }
+        .shadow{
+            background-color: #000000;
+            width: 70%;
+            height: 20%;
+            bottom: 6%;
+            -webkit-filter: blur(30px);
+            filter: blur(30px);
+            margin-left: 20%;
+            margin-top: 10%;
+
+        }
+    }
+}
+
+#cond .uk-container .uk-grid {
+    max-height: 40vw;
+    min-height: 40vw;
+}
+
+@media (max-width: 640px) {
+
+    #cond .uk-container .uk-grid {
+        max-height: none;
+        min-height: none;
+    }
+}
+
+
+
 
 
 
