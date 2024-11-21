@@ -338,6 +338,7 @@ h1 {
         font-size: 20px;
         padding: 10px;
     }
+    
 
 } 
 
@@ -348,6 +349,12 @@ h1 {
     .description-card{
         font-size: medium;
     }
-}
+    .animation:hover{
+        .shadow{
+            -webkit-filter: blur(80px);
+            filter: blur(80px);
+        }
 
+    }
+}
 
